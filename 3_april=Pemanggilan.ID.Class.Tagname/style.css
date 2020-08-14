@@ -1,0 +1,19 @@
+section {
+    background-image: url(bgmakanan.jpg);
+    background-size: cover;
+    padding-bottom: 350px;
+}
+
+h1 {
+    text-align: center;
+    color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    padding-top: 50px;
+}
+
+.isi {
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}

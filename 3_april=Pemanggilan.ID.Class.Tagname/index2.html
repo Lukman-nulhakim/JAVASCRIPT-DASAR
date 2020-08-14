@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- <input type="text" class="nama" value="edutech">
+    <br>
+    <input type="text" class="nama" value="rian">
+    <br>
+    <input type="text" class="nama" value="ari">
+    <br>
+    <button class="nama">test</button>
+    <br>
+    <a href="" class="nama">lihat</a>
+
+    ini buat ngecek/manggil
+    <button onclick="jalankanPungsi()">check</button>
+
+    <script>
+        function jalankanPungsi() {
+            console.log(document.getElementsByClassName('nama'));
+        }
+    </script> -->
+
+    <!-- <h1>Daftar makanan</h1>
+    <ul>
+        <li class="makanan">Nasi goreng</li>
+        <li class="makanan">Nasi Uduk</li>
+    </ul>
+
+    <button onclick="lihatMakanan()">Lihat</button>
+
+    <script>
+        function lihatMakanan() {
+            document.getElementsByClassName("makanan")[0].innerHTML = "ikan asin";
+        }
+    </script> -->
+
+
+    <!-- <p class="data"> Selamat datang admin</p>
+    <div class="data check">Lihat karyawan 1</div>
+    <div class="data check">Lihat karyawan 2</div>
+    <div class="data check">Lihat karyawan 3</div>
+    <div class="data check">Lihat karyawan 4</div>
+    <div class="data check">Lihat karyawan 5</div> -->
+
+    <!-- <script>
+        // ini yg spesifik cuma 1
+        // var warna = document.getElementsByClassName('check')[2];
+        // document.write(warna.style.background = "yellow");
+
+        // ini warna yg perulangan 
+        // var warna = document.getElementsByClassName('check');
+        // document.write("data Karyawan = " + warna.length);
+
+        //in
+        // for (var data in warna) {
+        //     warna[data].style.background = "yellow";
+        // }
+
+
+        // untuk memanggil id (documet.getElementById)
+        // untuk memanggil class (documet.getElementsByClassName)
+        // untuk memanggil Tag html (documet.getElementsByTagName)
+    // </script> -->
+
+    <!-- TUGAS
+        munculkan table dan masukan 10 data karyawan
+        yg angka nya ganjil warna nya kuning
+        yg angkanya genap warna nya hijau
+        bikin 3 versi
+        versi 1 dengan menggunakan = getElementById (ini output bukan array)
+        versi 2 dengan menggunakan = getElementsByClassName (ini output array) ->perhatikan apa pungsinya, dan memanggil apa dia
+        versi 3 dengan menggunakan = getElementsByTagName (ini output array) ->perhatikan apa pungsinya, dan memanggil apa
+        dia
+
+
+    Table Pemanggilan Class -->
+    <form>
+        <table border="1" width="500px" cellspacing="0" cellpadding="3" align="center">
+            <tr>
+                <th>NO</th>
+                <th>Daftar Karyawan</th>
+            </tr>
+            <tr class="ganjil">
+                <th>1</th>
+                <td>Nama Karyawan : Agung</td>
+            </tr>
+            <tr class="genap">
+                <th>2</th>
+                <td>Nama Karyawan : Aldo</td>
+            </tr>
+            <tr class="ganjil">
+                <th>3</th>
+                <td>Nama Karyawan : Rafif</td>
+            </tr>
+            <tr class="genap">
+                <th>4</th>
+                <td>Nama Karyawan : Ronaldo</td>
+            </tr>
+            <tr class="ganjil">
+                <th>5</th>
+                <td>Nama Karyawan : Ilham</td>
+            </tr>
+            <tr class="genap">
+                <th>6</th>
+                <td>Nama Karyawan : Narto</td>
+            </tr>
+            <tr class="ganjil">
+                <th>7</th>
+                <td>Nama Karyawan : Rangga</td>
+            </tr>
+            <tr class="genap">
+                <th>8</th>
+                <td>Nama Karyawan : Ita</td>
+            </tr>
+            <tr class="ganjil">
+                <th>9</th>
+                <td>Nama Karyawan : Fajar</td>
+            </tr>
+            <tr class="genap">
+                <th>10</th>
+                <td>Nama Karyawan : Lukman</td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        var warna = document.getElementsByClassName('ganjil');
+        var warna1 = document.getElementsByClassName('genap');
+        document.write("Daftar Karyawan warna kuning : " + warna.length);
+        document.write("Daftar Karyawan warna hijau : " + warna1.length);
+
+        for (var nama in warna) {
+            warna[nama].style.background = "yellow";
+            for (nama1 in warna1) {
+                warna1[nama1].style.background = "green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

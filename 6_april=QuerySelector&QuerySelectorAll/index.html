@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- -----ini pemanggilan yg ID--------
+    <table id="table">
+        <tr bgcolor="tomato">
+            <th align="center" valign="center" colspan="2">DATA KARYAWAN PT. SUGOY TBK.</th>
+        </tr>
+        <tr>
+            <td align="center" valign="center">1</td>
+            <td>Aisaka Taiga</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">2</td>
+            <td>Azusa Nakano</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">3</td>
+            <td>Megumin</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">4</td>
+            <td>Ram</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">5</td>
+            <td>Rem</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">6</td>
+            <td>Shiro</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">7</td>
+            <td>Takahashi Rikka</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">8</td>
+            <td>Yui</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">9</td>
+            <td>Rize</td>
+        </tr>
+        <tr>
+            <td align="center" valign="center">10</td>
+            <td>Kobato</td>
+        </tr>
+    </table>
+
+
+    <script>
+        ---ini pamanggilan yg ID-----
+        var table = document.getElementById('table');
+        var tBody = table.childNodes[1];
+        var tRow = tBody.childNodes;
+        var iteration = [];
+
+        for (let x = 0; x < tRow.length; x++) {
+            if (x % 2 == 0 && x > 0) {
+                iteration.push(x);
+                for (let y = 1; y <= iteration.length; y++) {
+                    if (y % 2 == 0) {
+                        tRow[x].setAttribute('style', 'background-color: green; color: white;');
+                    } else {
+                        tRow[x].setAttribute('style', 'background-color: yellow');
+                    }
+                }
+            }
+        }
+    </script> -->
+
+
+    <!-- ------Pamanggilan tag name------
+    <table>
+        <tr bgcolor="tomato">
+            <th align="center" valign="center" colspan="2">DATA KARYAWAN PT. SUGOY TBK.</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+
+
+        <script>
+            var tRow = document.getElementsByTagName('tr');
+            var tData = document.getElementsByTagName('td');
+            var iteration = [];
+
+            for (let x = 0; x < tRow.length; x++) {
+                if (x % 2 == 0 && x > 0) {
+                    tRow[x].setAttribute('style', 'background-color: green; color: white;');
+                } else if (x % 2 == 1) {
+                    tRow[x].style.backgroundColor = 'yellow';
+                }
+            }
+
+            for (let x = 0; x < tData.length; x++) {
+                if (x % 2 == 0) {
+                    iteration.push(x);
+                    tData[x].setAttribute('align', 'center');
+                    for (let y = 1; y <= iteration.length; y++) {
+                        tData[x].textContent = y;
+                    }
+                } else {
+                    for (let z = 1; z <= iteration.length; z++) {
+                        tData[x].textContent = `Lukman
+                
+                ${z}`;
+                    }
+                }
+            }
+        </script> -->
+
+
+    <!-- ------pemanggilan By class name------
+    <table>
+        <tr bgcolor="tomato">
+            <th align="center" valign="center" colspan="2">DATA KARYAWAN PT. SUGOY TBK.</th>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-dens"></td>
+            <td class="table-dens"></td>
+        </tr>
+
+
+    </table>
+
+    <script>
+        var tRow = document.getElementsByClassName('table-row');
+        var tDens = document.getElementsByClassName('table-dens');
+        var iteration = [];
+
+        for (var index = 0; index < tRow.length; index++) {
+            if (index % 2 == 0) {
+                tRow[index].setAttribute('style', 'background-color:green');
+            } else if (index % 2 == 1) {
+                tRow[index].setAttribute('style', 'background-color:yellow');
+            }
+
+        }
+        for (let x = 0; x < tDens.length; x++) {
+            if (x % 2 == 0) {
+                iteration.push(x);
+                for (y = 1; y <= iteration.length; y++) {
+                    tDens[x].textContent = y;
+                }
+            } else {
+                for (z = 1; z <= iteration.length; z++) {
+                    tDens[x].textContent = "Lukman" + z;
+                }
+
+            }
+
+        }
+    </script> -->
+</body>
+
+</html>

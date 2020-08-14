@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--getElementById-->
+    <!-- <input type="text" id="nama" value="ari">
+    <br>
+    <input type="text" id="alamat" value="cipondoh">
+    <br>
+    <button onclick="lihat()">lihat karyawan</button>
+
+    <script>
+        function lihat() {
+            console.log(document.getElementById('nama'));
+            console.log(document.getElementById('alamat'));
+        }
+    </script> -->
+
+    <!---untuk mentraiger ceklis-->
+    <!-- <form>
+        <input type="checkbox" id="lihat">
+        <input type="button" onclick="muncul()" value="munculkan check">
+        <input type="button" onclick="hilang()" value="hilangkan check">
+    </form>
+
+    <script>
+        function muncul() {
+            document.getElementById('lihat').checked = true;
+        }
+
+        function hilang() {
+            document.getElementById('lihat').checked = false;
+        }
+    </script> -->
+
+    <!------>
+    <!-- <form>
+        <h1>selamat datang di restoran kami</h1>
+        <input type="checkbox" id="makanan" value="ikan lele">ikan lele<br>
+        <input type="checkbox" id="makanan" value="ayam bakar">ayam bakar
+        <br>
+        <input type="button" onclick="pesananAnda()" value="silahkan pesan">
+        <br><br>
+        <input type="text" id="pesanan" size="70px">
+    </form>
+    <script>
+        function pesananAnda() {
+            var makanan = document.forms[0].makanan;
+            var txt = "";
+            for (var i = 0; i < makanan.length; i++) {
+                if (makanan[i].checked) {
+                    txt = txt + makanan[i].value + ""
+                }
+            }
+            document.getElementById('pesanan').value = "Anda memesan makanan : " + txt;
+        }
+    </script> -->
+
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 ">
+                    <h1>Selamat datang di restoran Jepang</h1><br><br>
+                    <label>Isi Nama Anda : </label><input type="text" placeholder="masukan nama anda"><br><br>
+                    <label>Daftar makanan : </label><input type="checkbox">Sushi <input type="checkbox">Ramen <input type="checkbox">Takoyaki <br><br>
+                    <label>Daftar minuman :</label><input type="radio">Ait putih <input type="radio">Teh Tawar Anget
+                    <br><br>
+                    <label>Pilih Meja :</label> <select id="">
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="A3">A3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
